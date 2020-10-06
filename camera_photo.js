@@ -27,14 +27,14 @@
 				qrbox: 250 // Optional if you want bounded box UI
 			},
 			function (result) {
-				driverData.Url = result;
-				that.qrScannerStop(undefined, result);
+				var url = result;
+				that.qrScannerStop();
 			}).catch(function (error) {
 			// do nothing
 		});
 	},
         
-    qrScannerStop: function (event, result) {
+    qrScannerStop: function () {
 		var that = this;
 		qrCodeReader.stop().then(function (ignore) {
 			// QR Code scanning is stopped.
