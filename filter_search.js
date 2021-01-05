@@ -1,16 +1,14 @@
-		/* XML:
-    <List id="matnrValueHelpList" items="{/HEADERCollection}" mode="SingleSelectMaster" selectionChange="onItemSelect">
-				<headerToolbar>
-					<OverflowToolbar>
-						<Label labelFor="searchFieldMatnr" text="{i18n>matnr}"/>
-						<SearchField id="searchFieldMatnr" liveChange=".onSearch($event, 'MATNR')" width="200px" showSearchButton="false"
-							placeholder="{i18n>number}"/>
-						<SearchField id="searchFieldText" liveChange=".onSearch($event, 'KTEXT')" width="400px" showSearchButton="false" placeholder="{i18n>ktext}"/>
-					</OverflowToolbar>
-				</headerToolbar>
-				<StandardListItem title="{MATNR}" description="{KTEXT}" icon="{ICON}" iconDensityAware="false" iconInset="true" type="Active"/>
-			</List>
-    */
+/* XML:	<List id="matnrValueHelpList" items="{/HEADERCollection}" mode="SingleSelectMaster" selectionChange="onItemSelect">
+		<headerToolbar>
+			<OverflowToolbar>
+				<Label labelFor="searchFieldMatnr" text="{i18n>matnr}"/>
+					<SearchField id="searchFieldMatnr" liveChange=".onSearch($event, 'MATNR')" width="200px" showSearchButton="false"
+						placeholder="{i18n>number}"/>
+					<SearchField id="searchFieldText" liveChange=".onSearch($event, 'KTEXT')" width="400px" showSearchButton="false" placeholder="{i18n>ktext}"/>
+				</OverflowToolbar>
+			</headerToolbar>
+		<StandardListItem title="{MATNR}" description="{KTEXT}" icon="{ICON}" iconDensityAware="false" iconInset="true" type="Active"/>
+	</List> */
     
     onSearch: function (event, fieldname) {
 			var manager = new Manager();
